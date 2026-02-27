@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chatbot RAG</title>
+  <title>BeanMind AI</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="chat-container">
-  <h2>AdventureBo</h2>
+  <h2>BeanMind AI</h2>
   <div id="chat-box"></div>
   <div class="input-area">
     <input type="text" id="user-input" placeholder="Tulis pesan...">
-    <button onclick="sendMessage()">Kirim</button>
+    <button onclick="sendMessage()">KIRIM</button>
   </div>
 </div>
 
@@ -31,7 +32,7 @@ async function sendMessage() {
   });
 
   const data = await response.json();
-  addMessage("Bot", data.reply);
+  addMessage("BeanMind", data.reply);
 }
 
 function addMessage(sender, text) {
